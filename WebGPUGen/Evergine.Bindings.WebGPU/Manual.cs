@@ -1,5 +1,6 @@
 ﻿namespace Evergine.Bindings.WebGPU;
 
+[Flags]
 public enum WGPUBufferUsage : ulong
 {
     None = 0x0000000000000000,
@@ -15,6 +16,7 @@ public enum WGPUBufferUsage : ulong
     QueryResolve = 0x0000000000000200,
 }
 
+[Flags]
 public enum WGPUColorWriteMask : ulong
 {
     None = 0x0000000000000000,
@@ -25,6 +27,7 @@ public enum WGPUColorWriteMask : ulong
     All = 0x000000000000000F,
 }
 
+[Flags]
 public enum WGPUMapMode : ulong
 {
     None = 0x0000000000000000,
@@ -32,6 +35,7 @@ public enum WGPUMapMode : ulong
     Write = 0x0000000000000002,
 }
 
+[Flags]
 public enum WGPUShaderStage : ulong
 {
     None = 0x0000000000000000,
@@ -40,6 +44,7 @@ public enum WGPUShaderStage : ulong
     Compute = 0x0000000000000004,
 }
 
+[Flags]
 public enum WGPUTextureUsage : ulong
 {
     None = 0x0000000000000000,
@@ -50,6 +55,7 @@ public enum WGPUTextureUsage : ulong
     RenderAttachment = 0x0000000000000010,
 }
 
+[Flags]
 public enum WGPUInstanceBackend : ulong
 {
     All = 0x00000000,
@@ -64,6 +70,7 @@ public enum WGPUInstanceBackend : ulong
     Force32 = 0x7FFFFFFF,
 }
 
+[Flags]
 public enum WGPUInstanceFlag : ulong
 {
     Default = 0x00000000,
