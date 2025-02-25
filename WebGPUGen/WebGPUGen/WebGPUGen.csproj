@@ -4,6 +4,7 @@
 		<TargetFramework>net8.0</TargetFramework>
 		<OutputType>Exe</OutputType>
 		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+		<Nullable>disable</Nullable>
 		<!-- Workaround for issue https://github.com/microsoft/ClangSharp/issues/129 -->
 		<RuntimeIdentifier Condition="'$(RuntimeIdentifier)' == '' AND '$(PackAsTool)' != 'true'">$(NETCoreSdkRuntimeIdentifier)</RuntimeIdentifier>
 	</PropertyGroup>

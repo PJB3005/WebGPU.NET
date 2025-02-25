@@ -49,7 +49,7 @@ namespace Evergine.Bindings.WebGPU
             return Value.Equals(other.Value);
         }
 
-        public override bool Equals(object obj)
+        public override bool Equals(object? obj)
         {
             return obj is WGPUBool b && Equals(b);
         }
